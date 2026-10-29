@@ -2,17 +2,14 @@ import joblib
 import numpy as np
 import streamlit as st
 
-# Page Configuration
 st.set_page_config(
     page_title="Hotel Booking Cancellation Predictor",
     page_icon="🏨",
     layout="centered",
 )
 
-# Model Load karna
 model = joblib.load("gb_booking_model.pkl")
 
-# Yahan apne image ka naam likh dein jo folder me save hai (jaise 'hotel.jpg')
 st.image("z.jpg", width="stretch")
 
 st.title("Hotel Booking Cancellation Predictor")
